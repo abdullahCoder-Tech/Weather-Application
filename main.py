@@ -7,7 +7,7 @@ import customtkinter
 
 ## 🌦️ get_weather function
 def get_weather(city):
-    API_key = "YOUR-API-HERE"
+    API_key = "YOUR_API_KEY"
     url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_key}"
     res = requests.get(url)
 
