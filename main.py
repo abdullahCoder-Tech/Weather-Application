@@ -76,4 +76,5 @@ temperature_label.pack()
 description_label = tk.Label(root, font="Helvetica 20")
 description_label.pack()
 
+root.resizable(False, False)
 root.mainloop()
