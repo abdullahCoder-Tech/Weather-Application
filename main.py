@@ -7,7 +7,7 @@ import customtkinter
 
 ## 🌦️ get_weather function
 def get_weather(city):
-    API_key = "YOUR_API_KEY"
+    API_key = "05f4ee67848cc2f2685db6e4c1cf5f3e"
     url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_key}"
     res = requests.get(url)
 
@@ -76,4 +76,5 @@ temperature_label.pack()
 description_label = tk.Label(root, font="Helvetica 20")
 description_label.pack()
 
+root.resizable(False, False)
 root.mainloop()
